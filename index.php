@@ -8,5 +8,7 @@
 </head>
 <body>
     <a href="view/formCadastroCliente.php">Cadastrar Cliente</a>
+    <br><br>
+    <a href="view/formListarAllCliente.php">Listar Clientes</a>
 </body>
 </html>

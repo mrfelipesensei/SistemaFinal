@@ -1,5 +1,6 @@
 <?php
     require_once '../dto/clienteDTO.php';
+    require_once 'conexao/conexao.php';
 
     class ClienteDAO{
 
@@ -27,6 +28,22 @@
                 echo $msg;
             }
         }
+
+
+        function getAllCliente(){
+            $banco = new Conexao();
+            $conexao = $banco->getConexao();
+
+            $sql = $conexao->query("select * from cliente");
+            return $sql;
+
+            if (!$sql) {
+                $msg = $conexao->error;
+                return $msg;
+            }
+        }
+
+
     }
 
 

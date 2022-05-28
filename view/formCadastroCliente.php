@@ -15,11 +15,11 @@
                 <br><br>
                 <input type="text" name="telefone" id="telefone" placeholder="Telefone" required>
                 <br><br>
-                <input type="email" name="email" id="email" placeholder="seunome@email.com" required>
+                <input type="email" name="email" id="email" placeholder="seunome@email.com" maxlength="30" required>
 
                 <p>Sexo:</p>
                 <label>Masculino</label>
-                <input type="radio" name="sexo" id="masculino" value="M"> 
+                <input type="radio" name="sexo" id="masculino" value="M" required> 
 
                 <label>Feminino</label>
                 <input type="radio" name="sexo" id="feminino" value="F">

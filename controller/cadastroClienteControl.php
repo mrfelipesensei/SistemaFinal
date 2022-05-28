@@ -21,7 +21,7 @@ $ok = $clienteDAO->cadastrarCliente($clienteDTO);
 
 if($ok){
     echo "<script>alert('Cadastrado realizado')
-                window.location = '../index.html'
+                window.location = '../index.php'
     </script>";
 }
 
