@@ -79,6 +79,19 @@
             }
 
 
+        }
+
+        function excluirCliente($telefone){
+            $bd = new Conexao();
+            $conexao = $bd->getConexao();
+
+            $sql = $conexao->query("delete from cliente where telefone = '$telefone' ");
+
+            if (!$sql) {
+                echo $conexao->error;
+            } else {
+                return $sql;
+            }
 
         }
         

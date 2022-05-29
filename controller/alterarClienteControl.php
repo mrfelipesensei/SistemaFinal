@@ -20,7 +20,9 @@
     $ok = $clienteDAO->alterarCliente($clienteDTO);
 
     if ($ok) {
-        echo "YES";
+        echo "<script> alert('Alterado com sucesso') 
+                    window.location = '../view/listarAllCliente.php'
+        </script>";
     } else {
         echo "NOPS";
     }
