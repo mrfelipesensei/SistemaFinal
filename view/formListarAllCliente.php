@@ -37,7 +37,7 @@
                     echo     "<td>{$cliente['email']}</td>";
                     echo     "<td>{$cliente['sexo']}</td>";
                     echo     "<td>{$cliente['datanasc']}</td>";
-                    echo     "<td><a href=''>Alterar</a></td>";
+                    echo     "<td><a href='formAlterarCliente.php?telefone={$cliente['telefone']}'>Alterar</a></td>";
                     echo     "<td><a href=''>Excluir</a></td>";
                     echo     "</tr>";
                 }
