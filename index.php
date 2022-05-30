@@ -16,14 +16,13 @@ include 'login/validaLogin.php';
         echo "<br>";
         echo "Perfil: ", $_SESSION['perfil'];
     ?>
-
     <br><br>
-    <a href="view/formCadastroCliente.php">Cadastrar Cliente</a>
-    <br><br>
-    <a href="view/formListarAllCliente.php">Listar Clientes</a>
-    <br><br>
-    <a href="view/formCadastroFunc.php">Cadastrar Funcionário</a>
-    <br><br>
+    
+    <?php
+        include 'view/menu.php';
+    ?>
+    
     <a href="controller/logoffControl.php">Logout</a>
+
 </body>
 </html>
