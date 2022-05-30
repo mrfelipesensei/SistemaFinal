@@ -8,14 +8,14 @@
 </head>
 <body>
     <div class="conteiner">
-        <form action="" method="post">
+        <form action="../controller/loginControl.php" method="post">
             <h2>Bem-vindo!</h2>
             <input type="text" name="usuario" id="usuario" placeholder="Nome de Usuário" maxlength="20" required>
             <br><br>
             <input type="password" name="senha" id="senha" placeholder="Insira sua Senha" maxlength="15" required>
             <br><br>
 
-            <input type="submit" value="Login">
+            <input type="submit" value="Login" id="submit">
 
         </form>
     </div>
