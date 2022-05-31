@@ -94,8 +94,6 @@ h3{
 }
 
 
-
-
 /*Sobre o Autor*/
 .botao{
     border: none;
@@ -115,11 +113,6 @@ h3{
 }
 
 .botao:hover{
-    background: greenyellow;
+    background: rgb(35, 136, 111);
     color:black;
-
-}
-
-.something{
-    margin-bottom: 5cm;
 }
