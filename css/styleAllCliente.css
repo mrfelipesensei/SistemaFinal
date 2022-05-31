@@ -1,0 +1,41 @@
+body{
+    background-image: url("black.png");
+    font-size: 15px;
+    font-family: Verdana;
+    text-align: center;
+}
+
+table {
+    background-image: url("blackboard.jpg");
+    color:rgb(227, 227, 227);
+    text-align: center;
+    width: 100%;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+tr,td{
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+a:link, a:visited {
+    border: none;
+    border-radius: 20px;
+    width: 50%;
+    padding: 5px;
+    margin-top: 15px;
+    background-color: cornflowerblue;
+    color:azure;
+    font-weight: bolder;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 1s all;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    background: greenyellow;
+    color:black;
+    transform: scale(1.2);
+}

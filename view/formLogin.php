@@ -19,7 +19,7 @@
         <form action="../controller/loginControl.php" method="post">
             <h2>Bem-vindo!</h2>
             <input type="text" name="usuario" id="usuario" placeholder="Nome de Usuário" maxlength="20" required class="inputs">
-            <br><br>
+            <br>
             <input type="password" name="senha" id="senha" placeholder="Insira sua Senha" maxlength="15" required class="inputs">
             <br><br>
 

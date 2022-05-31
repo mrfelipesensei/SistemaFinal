@@ -54,7 +54,7 @@
         <br><br>
         
         <div>
-            <form action="formLogin.php">
+            <form action="../index.php">
                 <input type="submit" value="Voltar" id="cadastro" class="submit2">
             </form>
         </div>
