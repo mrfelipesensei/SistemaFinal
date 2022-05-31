@@ -16,6 +16,7 @@
     </div>
 
     <h3>Após essa rápida etapa, você já poderá pedir!</h3>
+    <br><br>
     <main>
         <div class="conteiner">
             <form action="../controller/cadastroClienteControl.php" method="post">

@@ -1,4 +1,3 @@
-
 body{
     background-image: url("black.png");
     font-size: 20px;
@@ -8,26 +7,15 @@ body{
 
 h1{
     color: aquamarine;
-    font-size: 40px;
+    font-size: 20px;
 }
 
-#popeye{
-    margin-top: 15px;
+#worker{
+    margin-top: -40px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 15%;
-}
-
-h3{
-    margin-top: 50px;
-    font-weight: bolder;
-    font-size: 20px;
-    color: aquamarine;
-}
-
-h2{
-    font-size: 22px;
+    width: 27%;
 }
 
 .conteiner{
@@ -57,6 +45,16 @@ h2{
     font-size: 15px;
 }
 
+.input2{
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 45%;
+    font-size: 15px;
+}
+
 .submit{
     border: none;
     border-radius: 20px;
@@ -83,7 +81,7 @@ h2{
     border-radius: 20px;
     width: 7%;
     padding: 10px;
-    margin-top: 55%;
+    margin-top: 70%;
     background-color: rgb(63, 103, 177);
     color:azure;
     font-weight: bolder;
