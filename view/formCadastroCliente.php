@@ -5,33 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+
+    <link rel="stylesheet" href="../css/styleCadastroCliente.css">
 </head>
 <body>
     
+    <h1>Popeye Foods</h1>
+    <div>
+        <img src="../css/popeye.png" alt="Personagem Popeye" id="popeye">
+    </div>
+
+    <h3>Após essa rápida etapa, você já poderá pedir!</h3>
     <main>
         <div class="conteiner">
             <form action="../controller/cadastroClienteControl.php" method="post">
-                <input type="text" name="nome" id="nome" placeholder="Nome Completo" maxlength="30" required>
-                <br><br>
-                <input type="text" name="telefone" id="telefone" placeholder="Telefone" required>
-                <br><br>
-                <input type="email" name="email" id="email" placeholder="seunome@email.com" maxlength="30" required>
+                <h2>Preencha os campos:</h2>
+                <input type="text" name="nome" id="nome" placeholder="Nome Completo" maxlength="30" required class="inputs">
+                <br>
+                <input type="text" name="telefone" id="telefone" placeholder="Telefone" required class="inputs">
+                <br>
+                <input type="email" name="email" id="email" placeholder="seunome@email.com" maxlength="30" required class="inputs">
 
                 <p>Sexo:</p>
-                <label>Masculino</label>
+            
                 <input type="radio" name="sexo" id="masculino" value="M" required> 
-
-                <label>Feminino</label>
+                <label>Masculino</label>
+                
                 <input type="radio" name="sexo" id="feminino" value="F">
+                <label>Feminino</label>
                 
                 <p>Data de nascimento:</p>
-                <input type="date" name="datanasc" id="datanasc" required>
+                <input type="date" name="datanasc" id="datanasc" required class="inputs">
                 <br><br>
 
-                <input type="submit" value="Cadastrar">
+                <input type="submit" value="Cadastrar" class="submit">
 
             </form>
         </div>
+        <br><br>
+        <div>
+            <form action="formLogin.php">
+                <input type="submit" value="Voltar" id="cadastro" class="submit2">
+            </form>
+        </div>
+
     </main>
 
 </body>
