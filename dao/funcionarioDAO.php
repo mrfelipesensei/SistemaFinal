@@ -25,7 +25,7 @@
                 $ultimoID = $conexao->insert_id;
 
                 $sql2 = $conexao->prepare("insert into funcionario values(?,?,?,?,?,?)");
-                $sql2->bind_param('ssssii',$nome,$telefone,$email,$sexo,$datanasc,$ultimoID);
+                $sql2->bind_param('sssssi',$nome,$telefone,$email,$sexo,$datanasc,$ultimoID);
                 $return = $sql2->execute();
                 return $return;
 
@@ -44,7 +44,7 @@
             $sql = $conexao->query("select * from usuario u inner join funcionario f on f.usuario_idusuario = u.idusuario
             join perfil p
             on u.perfil_idperfil = p.idperfil;");
-            
+
             return $sql;
 
             if (!$sql) {
