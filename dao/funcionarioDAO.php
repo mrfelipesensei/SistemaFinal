@@ -1,5 +1,5 @@
 <?php
-
+    require_once '../dto/funcionarioDTO.php';
     require_once 'conexao/conexao.php';
 
     class funcionarioDAO{
@@ -34,11 +34,41 @@
                 echo $erro;
             }
             
-            
-
 
         }
 
+        function getAllFunc(){
+            $banco = new Conexao();
+            $conexao = $banco->getConexao();
+
+            $sql = $conexao->query("select * from usuario u inner join funcionario f on f.usuario_idusuario = u.idusuario
+            join perfil p
+            on u.perfil_idperfil = p.idperfil;");
+            
+            return $sql;
+
+            if (!$sql) {
+                $msg = $conexao->error;
+                return $msg;
+            }
+        }
+
+        function getFuncByTel($telefone){
+            $banco = new Conexao();
+            $conexao = $banco->getConexao();
+
+            $sql = $conexao->query("Select * from funcionario where telefone = '$telefone' ");
+            $final = $sql->fetch_assoc();
+
+            if (!$final) {
+                echo $conexao->error;
+            } else {
+                return $final;
+            }
+
+        }
+
+        
     }
 
 

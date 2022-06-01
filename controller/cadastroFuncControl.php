@@ -8,10 +8,11 @@ $nome = $_POST['nome'];
 $telefone = $_POST['telefone'];
 $email = $_POST['email'];
 $usuario = $_POST['usuario'];
-$senha = $_POST['senha'];
+$senha = md5($_POST['senha']);
 $perfil = $_POST['perfil'];
 $sexo = $_POST['sexo'];
 $datanasc = date($_POST['datanasc']);
+
 
 $funcionarioDTO = new funcionarioDTO();
 $funcionarioDTO->setNome($nome);
