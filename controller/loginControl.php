@@ -5,7 +5,7 @@ require_once '../dao/loginDAO.php';
 
 
 $usuario = isset($_POST['usuario'])? $_POST['usuario']: '';
-$senha = $_POST['senha'];
+$senha = md5($_POST['senha']);
 
 $loginDAO = new loginDAO();
 $login = $loginDAO->login($usuario,$senha);

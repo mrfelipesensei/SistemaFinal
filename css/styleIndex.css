@@ -1,0 +1,76 @@
+body{
+    background-image: url("black.png");
+    font-size: 20px;
+    font-family: Verdana;
+    text-align: center;
+}
+
+.conteiner1{
+    margin-top: 100px;
+    background-image: url("blackboard.jpg");
+    color:rgb(227, 227, 227);
+    position: absolute;
+    margin-top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    width: 25%;
+    border-radius: 25px;
+    border-style: outset;
+    border-width: 10px;   
+    border-color:rgb(35, 136, 111);
+}
+
+.conteiner2{
+    margin-top: 100px;
+    background-image: url("blackboard.jpg");
+    color:rgb(227, 227, 227);
+    position: absolute;
+    margin-top: 27%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    width: 25%;
+    border-radius: 25px;
+    border-style: outset;
+    border-width: 10px;   
+    border-color:rgb(35, 136, 111);
+}
+
+a:link, a:visited {
+    border: none;
+    border-radius: 20px;
+    width: 50%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: cornflowerblue;
+    color:azure;
+    font-weight: bolder;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 1s all;
+    text-decoration: none;
+}
+  
+a:hover, a:active {
+    background: greenyellow;
+    color:black;
+    
+}
+
+#submit{
+    border: none;
+    border-radius: 20px;
+    width: 5%;
+    padding: 10px;
+    position: absolute;
+    margin-top: 43%;
+    left: 49%;
+    transform: translate(-50%,-50%);
+    color:azure;
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 1s all;
+}
+
