@@ -9,11 +9,15 @@
             $nome = $clienteDTO->getNome();
             $telefone = $clienteDTO->getTelefone();
             $email = $clienteDTO->getEmail();
+            $usuario = $clienteDTO->getUsuario();
+            $senha = $clienteDTO->getSenha();
+            $perfil = $clienteDTO->getPerfil();
             $sexo = $clienteDTO->getSexo();
             $datanasc = $clienteDTO->getDatanasc();
 
             //comunicação com o Banco de Dados
 
+            /*
             $banco = new mysqli("localhost","root","","projetophp");
             if ($banco->connect_error) {
                 echo "erro";
@@ -27,6 +31,28 @@
                 $msg = $banco->error;
                 echo $msg;
             }
+            */
+
+            try {
+                $bd = new Conexao();
+                $conexao = $bd->getConexao();
+
+                $sql1 = $conexao->prepare("insert into usuario(user,pass,perfil_idperfil) values(?,?,?)");
+                $sql1->bind_param('ssi',$usuario,$senha,$perfil);
+                $sql1->execute();
+
+                $ultimoID = $conexao->insert_id;
+
+                $sql2 = $conexao->prepare("insert into cliente values(?,?,?,?,?,?)");
+                $sql2->bind_param('sssisi',$nome,$telefone,$email,$sexo,$datanasc,$ultimoID);
+                $return = $sql2->execute();
+                return $return;
+
+            } catch (mysqli_sql_exception $e) {
+                $erro = $e->getMessage();
+                echo $erro;
+            }
+            
         }
 
 

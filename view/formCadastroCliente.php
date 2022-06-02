@@ -26,6 +26,17 @@
                 <input type="text" name="telefone" id="telefone" placeholder="Telefone" required class="inputs">
                 <br>
                 <input type="email" name="email" id="email" placeholder="seunome@email.com" maxlength="30" required class="inputs">
+                <br>
+                
+                <input type="text" name="usuario" id="usuario" placeholder="Seu nome de Usuário" maxlength="20" required class="inputs">
+                <br>
+                <input type="password" name="senha" id="senha" placeholder="Sua senha" maxlength="15" required class="inputs">
+                <br>
+
+                <select name="perfil" class="input2">
+                    <option value="3">Cliente</option>
+                    
+                </select>
 
                 <p>Sexo:</p>
             
@@ -36,7 +47,7 @@
                 <label>Feminino</label>
                 
                 <p>Data de nascimento:</p>
-                <input type="date" name="datanasc" id="datanasc" required class="inputs">
+                <input type="date" name="datanasc" id="datanasc" required class="input2">
                 <br><br>
 
                 <input type="submit" value="Cadastrar" class="submit">
