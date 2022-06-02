@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clientes</title>
 
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../css/styleAllCliente.css">
 </head>
 <body>
     <?php

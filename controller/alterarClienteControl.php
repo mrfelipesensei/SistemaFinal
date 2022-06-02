@@ -21,7 +21,7 @@
 
     if ($ok) {
         echo "<script> alert('Alterado com sucesso') 
-                    window.location = '../view/listarAllCliente.php'
+                    window.location = '../view/formListarAllCliente.php'
         </script>";
     } else {
         echo "NOPS";
