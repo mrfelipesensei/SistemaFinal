@@ -5,7 +5,7 @@ require_once '../dao/loginDAO.php';
 
 
 $usuario = isset($_POST['usuario'])? $_POST['usuario']: '';
-$senha = md5($_POST['senha']);
+$senha = $_POST['senha'];
 
 $loginDAO = new loginDAO();
 $login = $loginDAO->login($usuario,$senha);
@@ -13,7 +13,7 @@ $login = $loginDAO->login($usuario,$senha);
 if (!empty($login)){
     
     $_SESSION['usuario'] = $login['user'];
-    $_SESSION['perfil'] = $login['nome'];
+    $_SESSION['perfil'] = $login['nome_perfil'];
 
     echo "Deu bom";
 
