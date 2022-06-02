@@ -28,7 +28,7 @@ $funcionarioDAO = new funcionarioDAO();
 $ok = $funcionarioDAO->cadastrarFuncionario($funcionarioDTO);
 
 if ($ok) {
-    echo "<script> alert('Funcionário cadastro com sucesso')
+    echo "<script> alert('Funcionário cadastrado com sucesso')
                 window.location='../index.php'
     </script>";
 } else {
