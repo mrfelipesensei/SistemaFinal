@@ -11,8 +11,7 @@ $perfil = $_POST['perfil'];
 $sexo = $_POST['sexo'];
 $datanasc = date($_POST['datanasc']);
 
-echo $usuario;
-echo $perfil;
+
 
 $clienteDTO = new ClienteDTO();
 $clienteDTO->setNome($nome);
