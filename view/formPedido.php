@@ -52,70 +52,70 @@
 
     <h3>Faça seu pedido:</h3>
 
-    <div class="form">
-        <form action="" method="post">
+    <div class="conteiner">
+        <form action="../controller/cadastrarPedidoControl.php" method="post">
             <div class="itens">
                 <label for="proteina">Proteínas:</label>
                 <select id="proteina" name="proteina">
-                    <option value="op1">Omelete de Espinafre</option>
-                    <option value="op2">Lombinho Assado</option>
-                    <option value="op3">Almôndegas</option>
-                    <option value="op4">Frango Grelhado</option>
-                    <option value="op5">Patinho Moído</option>
+                    <option value="Omelete de Espinafre">Omelete de Espinafre</option>
+                    <option value="Lombinho Assado">Lombinho Assado</option>
+                    <option value="Almôndegas">Almôndegas</option>
+                    <option value="Frango Grelhado">Frango Grelhado</option>
+                    <option value="Patinho Moído">Patinho Moído</option>
                 </select>
             </div>
 
             <div>
                 <p class="quant">Quantidade:</p>
 
-                <input type="radio" name="qt">
+                <input type="radio" name="qt1" value="10" checked>
                 <label class="qt" for="qt10">10</label>
                 
-                <input type="radio" name="qt">
+                <input type="radio" name="qt1" value="20">
                 <label class="qt" for="qt20">20</label>
 
-                <input type="radio" name="qt">
+                <input type="radio" name="qt1" value="30">
                 <label class="qt" for="qt30">30</label>
             </div>
             <br>
 
             <div class="itens">
                 <label for="carb">Carboidratos:</label>
-                <select id="carb" name="carb">
-                    <option value="op1">Salada de Brócolis</option>
-                    <option value="op2">Abóbora Cozida</option>
-                    <option value="op3">Salada de Espinafre</option>
-                    <option value="op4">Salada de Tomate</option>
-                    <option value="op5">Batata Doce Cozida</option>
+                <select id="carb" name="carboidrato">
+                    <option value="Salada de Brócolis">Salada de Brócolis</option>
+                    <option value="Abóbora Cozida">Abóbora Cozida</option>
+                    <option value="Salada de Espinafre">Salada de Espinafre</option>
+                    <option value="Salada de Tomate">Salada de Tomate</option>
+                    <option value="Batata Doce Cozida">Batata Doce Cozida</option>
                 </select>
             </div>
 
             <div>
                 <p class="quant">Quantidade:</p>
 
-                <input type="radio" name="qt">
+                <input type="radio" name="qt2" value="10" checked>
                 <label class="qt" for="qt10">10</label>
                 
-                <input type="radio" name="qt">
+                <input type="radio" name="qt2" value="20">
                 <label class="qt" for="qt20">20</label>
 
-                <input type="radio" name="qt">
+                <input type="radio" name="qt2" value="30">
                 <label class="qt" for="qt30">30</label>
             </div>
             <br>
 
             <div>
-                <input type="email" name="email" placeholder="seunome@email.com" class="inputs" required>
+                <input type="email" name="email" placeholder="seunome@email.com" class="inputs" maxlength="30" required>
                 <br><br>
-                <input type="text" name="end" placeholder="Endereço de entrega" maxlength="35">
+                <input type="text" name="endereco" placeholder="Endereço de entrega" maxlength="35">
             </div>
 
             <div>
                 <p id="qhora">Qual melhor horário para entrega?</p>
-                <select id="hora" name="hora">
-                    <option value="manha">9h à 11h</option>
-                    <option value="tarde">13h à 18h</option>
-                    <option value="noite">19h à 21h</option> 
+                <select id="hora" name="horario">
+                    <option value="9h à 11h">9h à 11h</option>
+                    <option value="13h à 18h">13h à 18h</option>
+                    <option value="19h à 21h">19h à 21h</option> 
                 </select>
             </div>
             <br>
