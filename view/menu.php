@@ -16,7 +16,7 @@ switch ($perfil) {
         break;
     
     case 'Cliente':
-        echo "<a href='view/formListarAllCliente.php'>Listar Pedidos</a> <br><br>";
+        echo "<a href='view/formPedido.php'>Fazer Pedido</a> <br><br>";
         break;
         
 }

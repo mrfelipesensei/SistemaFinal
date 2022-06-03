@@ -1,0 +1,190 @@
+
+body{
+    background-image: url("black.png");
+    font-size: 20px;
+    font-family: Verdana;
+    text-align: center;
+}
+
+h1{
+    color: aquamarine;
+    font-size: 40px;
+}
+
+#popeye{
+    margin-top: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+}
+
+h2{
+    color: aquamarine;
+    font-size: 25px;
+}
+
+/*Tabela*/
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    
+}
+
+th {
+    background: linear-gradient(yellow,green);
+    border-radius: 30px;
+
+
+}
+
+td, th {
+    text-align: center;
+    font-size: 25px;
+    font-family: Verdana;
+    padding: 9px 15px;
+    border: 5px solid aquamarine;
+    border-style:outset;
+    border-radius: 15px;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+    color: rgb(5, 51, 29);
+    background-color: azure;
+}
+
+/*Imagem*/
+
+#food{
+    
+    width: 75%;
+    border-radius: 20px;
+}
+
+h3{
+    font-size: 25px;
+    color: aquamarine;
+    margin-bottom: 25px;
+}
+
+/*Formulário*/
+.conteiner{
+    margin-top: 100px;
+    background-image: url("blackboard.jpg");
+    color:rgb(227, 227, 227);
+    position: absolute;
+    top: 232%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    width: 30%;
+    font-size: 22px;
+    border-radius: 25px;
+    border-style: outset;
+    border-width: 10px;   
+    border-color:rgb(35, 136, 111);
+}
+
+.inputs{
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 70%;
+    font-size: 20px;
+}
+
+.input2{
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 45%;
+    font-size: 20px;
+}
+
+#proteina{
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+#carb{
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 15px;
+    font-size: 20px; 
+}
+
+.quant{
+    font-size: 25px;
+}
+
+.qt{
+    font-size: 25px;
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 9%;
+    height: 1.4em;
+}
+
+.itens{
+    font-size: 25px;
+}
+
+#hora{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.submit{
+    border: none;
+    border-radius: 20px;
+    width: 50%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: cornflowerblue;
+    color:azure;
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+.submit:hover{
+    background: greenyellow;
+    color:black;
+    transform: scale(1.2);
+}
+
+/*Botão Voltar*/
+.submit2{
+    border: none;
+    border-radius: 20px;
+    width: 7%;
+    padding: 10px;
+    margin-top: 70%;
+    background-color: rgb(63, 103, 177);
+    color:azure;
+    font-weight: bolder;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 1s all;
+    margin-bottom: 5px;
+}
+
+.submit2:hover{
+    background: rgb(35, 136, 111);
+    color:black;
+    transform: scale(1.1);
+}

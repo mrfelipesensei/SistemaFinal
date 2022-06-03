@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedido</title>
+
+    <link rel="stylesheet" href="../css/stylePedido.css">
 </head>
 <body>
     <h1>Popeye Foods</h1>
@@ -106,8 +108,8 @@
 
             <div>
                 <input type="email" name="email" placeholder="seunome@email.com" class="inputs" maxlength="30" required>
-                <br><br>
-                <input type="text" name="endereco" placeholder="Endereço de entrega" maxlength="35">
+                <br>
+                <input type="text" name="endereco" placeholder="Endereço de entrega" class="inputs" maxlength="35">
             </div>
 
             <div>
@@ -123,15 +125,12 @@
             <input id="pecaja" type="submit" value="Peça Já!" class="submit">
 
         </form>
-        <br><br>
-
+    </div>
+    <br><br>
         <div>
             <form action="../index.php">
                 <input type="submit" value="Voltar" id="cadastro" class="submit2">
             </form>
         </div>
-
-    </div>
-
 </body>
 </html>
