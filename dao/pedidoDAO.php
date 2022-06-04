@@ -1,5 +1,6 @@
 <?php
 require_once '../dto/pedidoDTO.php';
+require_once 'conexao/conexao.php';
 
     class pedidoDAO{
 
@@ -22,11 +23,23 @@ require_once '../dto/pedidoDTO.php';
             }
             return $sql;
 
+    
             
         }
 
+        function getAllPedido(){
+            $banco = new Conexao();
+            $conexao = $banco->getConexao();
 
+            $sql = $conexao->query("select * from pedido");
+            return $sql;
 
+            if (!$sql) {
+                $msg = $conexao->error;
+                return $msg;
+            }
+        }
+        
     }
 
 
