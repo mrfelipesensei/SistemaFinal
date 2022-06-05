@@ -29,10 +29,9 @@
                 <td>Perfil</td>
                 <td>Sexo</td>
                 <td>Data de Nascimento</td>
-                <!--
-                <td>Alterar</td>
-                <td>Excluir</td>
-                -->
+                <td>Excluir</image>
+                </td>
+                
             </tr>
 
             <?php
@@ -46,10 +45,7 @@
                     echo     "<td>{$funcionario['nome_perfil']}</td>";
                     echo     "<td>{$funcionario['sexo']}</td>";
                     echo     "<td>{$funcionario['datanasc']}</td>";
-                    /*
-                    echo     "<td><a href='formAlterarCliente.php?telefone={$cliente['telefone']}'>Alterar</a></td>";
-                    echo     "<td><a href='../controller/excluirClienteControl.php?telefone={$cliente['telefone']}' onclick='return excluir()'>Excluir</a></td>";
-                    */
+                    echo     "<td><a href='../controller/excluirFuncControl.php?telefone={$funcionario['telefone']}' onclick='return excluir()'>Excluir</a></td>";
                     echo     "</tr>";
                 }
 
