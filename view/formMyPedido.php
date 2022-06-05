@@ -5,18 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Pedido</title>
+
+    <link rel="stylesheet" href="../css/styleMyPedido.css">
 </head>
 <body>
-    
-    <h1>Preencha com seu email:</h1>
+    <div>
+        <form action="../index.php">
+            <input type="submit" value="Voltar" class="submit2">
+        </form>
+    </div>
+    <h1>Popeye Foods</h1>
+    <div>
+        <img src="../css/popeye.png" alt="Personagem Popeye" id="popeye">
+    </div>
+    <h2>Preencha com seu email:</h2>
     
 
     <div class="conteiner">
         <form action="" method="get">
-            <input type="email" placeholder="" name="email" value="<?php if(isset($_GET['email'])){echo $_GET['email'];} ?>">
-            <br><br>
-            <button type="submit">Buscar</button>
-            <h2>Atenção: Deve ser o mesmo email do pedido</h2>
+            <input type="email" placeholder="seunome@email.com" maxlength="30" required class="inputs" name="email" value="<?php if(isset($_GET['email'])){echo $_GET['email'];} ?>">
+            <br>
+            <button type="submit" class="submit">Buscar</button>
+            <h3>Atenção: Deve ser o mesmo email do pedido</h3>
             <br>
             
         </form>
@@ -40,22 +50,22 @@
                             ?>
                                 
                                 <label>Proteína:</label>
-                                <input type="text" value="<?= $row['proteina']; ?>">
+                                <input type="text" class="inputs" value="<?= $row['proteina']; ?>">
                                 <br>
                                 <label>Quantidade:</label>
-                                <input type="text" value="<?= $row['quantidade1']; ?>">
-                                <br>
+                                <input type="text" class="input2" value="<?= $row['quantidade1']; ?>">
+                                <br><br>
                                 <label>Carboidrato:</label>
-                                <input type="text" value="<?= $row['carboidrato']; ?>">
+                                <input type="text" class="inputs" value="<?= $row['carboidrato']; ?>">
                                 <br>
                                 <label>Quantidade:</label>
-                                <input type="text" value="<?= $row['quantidade2']; ?>">
-                                <br>
+                                <input type="text" class="input2" value="<?= $row['quantidade2']; ?>">
+                                <br><br>
                                 <label>Endereço de Entrega:</label>
-                                <input type="text" value="<?= $row['endereco']; ?>">
+                                <input type="text" class="inputs" value="<?= $row['endereco']; ?>">
                                 <br>
                                 <label>Horário:</label>
-                                <input type="text" value="<?= $row['horario']; ?>"
+                                <input type="text" class="input3" value="<?= $row['horario']; ?>"
 
 
 
@@ -73,8 +83,6 @@
 
 
         </div>
-            
-
         
     </div>
 </body>

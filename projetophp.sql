@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 03-Jun-2022 às 19:47
+-- Tempo de geração: 05-Jun-2022 às 04:31
 -- Versão do servidor: 10.4.24-MariaDB
 -- versão do PHP: 7.4.28
 
@@ -41,7 +41,7 @@ CREATE TABLE `cliente` (
 --
 
 INSERT INTO `cliente` (`nome`, `telefone`, `email`, `sexo`, `datanasc`, `usuario_idusuario`) VALUES
-('Teste', '(51) 5555-55555', 'teste2@aol.com', 'M', '2001-01-01', 31);
+('Maria', '(61) 4848-48484', 'mary@hotmail.com', 'F', '1997-01-01', 38);
 
 -- --------------------------------------------------------
 
@@ -58,14 +58,29 @@ CREATE TABLE `funcionario` (
   `usuario_idusuario` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+-- --------------------------------------------------------
+
 --
--- Extraindo dados da tabela `funcionario`
+-- Estrutura da tabela `pedido`
 --
 
-INSERT INTO `funcionario` (`nome`, `telefone`, `email`, `sexo`, `datanasc`, `usuario_idusuario`) VALUES
-('Felipe', '(55) 5555-55555', 'felipe@email.com', 'M', '1997-02-04', 17),
-('Paul', '(61) 6161-61616', 'paul_beatle@gmail.com', 'M', '1980-01-01', 18),
-('Felipe', '(61) 9859-65995', 'mrfelipesensei@gmail.com', 'M', '1997-02-04', 32);
+CREATE TABLE `pedido` (
+  `proteina` varchar(40) DEFAULT NULL,
+  `quantidade1` enum('10','20','30') DEFAULT NULL,
+  `carboidrato` varchar(40) DEFAULT NULL,
+  `quantidade2` enum('10','20','30') DEFAULT NULL,
+  `email` varchar(40) NOT NULL,
+  `endereco` varchar(40) DEFAULT NULL,
+  `horario` varchar(40) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `pedido`
+--
+
+INSERT INTO `pedido` (`proteina`, `quantidade1`, `carboidrato`, `quantidade2`, `email`, `endereco`, `horario`) VALUES
+('Omelete de Espinafre', '20', 'Salada de Espinafre', '20', 'jobs@hotmail.com', 'Infinite Loop Avenue', '13h à 18h'),
+('Omelete de Espinafre', '20', 'Salada de Tomate', '20', 'teste123@hotmail.com', 'Liverpool Street', '19h à 21h');
 
 -- --------------------------------------------------------
 
@@ -109,7 +124,12 @@ INSERT INTO `usuario` (`idusuario`, `user`, `pass`, `perfil_idperfil`) VALUES
 (17, 'Felipe', '202cb962ac59075b964b07152d234b70', 1),
 (18, 'Paul', '1f3870be274f6c49b3e31a0c6728957f', 2),
 (31, 'teste123', '202cb962ac59075b964b07152d234b70', 3),
-(32, 'Felipe456', '250cf8b51c773f3f8dc8b4be867a9a02', 1);
+(32, 'Felipe456', '250cf8b51c773f3f8dc8b4be867a9a02', 1),
+(33, 'teste123', '202cb962ac59075b964b07152d234b70', 3),
+(36, 'work123', '202cb962ac59075b964b07152d234b70', 2),
+(37, 'João478', 'cfee398643cbc3dc5eefc89334cacdc1', 2),
+(38, 'Maria454', 'e44fea3bec53bcea3b7513ccef5857ac', 3),
+(39, 'João478', 'cfee398643cbc3dc5eefc89334cacdc1', 2);
 
 --
 -- Índices para tabelas despejadas
@@ -126,6 +146,12 @@ ALTER TABLE `cliente`
 --
 ALTER TABLE `funcionario`
   ADD KEY `usuario_idusuario` (`usuario_idusuario`);
+
+--
+-- Índices para tabela `pedido`
+--
+ALTER TABLE `pedido`
+  ADD PRIMARY KEY (`email`);
 
 --
 -- Índices para tabela `perfil`
@@ -148,7 +174,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de tabela `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `idusuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `idusuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 
 --
 -- Restrições para despejos de tabelas
