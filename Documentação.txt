@@ -1,0 +1,35 @@
+Este sistema tem como por objetivo servir de base de dados de uma loja fictícia: Popeye Foods.
+
+1) 
+Primeiramente temos o Login no qual o usuário já cadastrado colocará suas informações nos campos adequados;
+Se ainda não for cadastrado, este o poderá fazê-lo nesta mesma página;
+Logo abaixo, temos um botão de informações à respeito do autor do Sofware.
+
+2)
+Ao acessar com perfil de Administrador será mostrado as seguintes opções no index.php:
+
+Nome do usuário e seu Perfil
+-Listar Clientes: A qual é apresentado todos os usuários registrados como tal e suas informações podendo alterá-las ou excluí-las, note que a senha encontra-se criptografada no modelo md5.
+-Cadastrar Funcionário: Onde existe um formulário para cadastro desse - somente o Administrador pode fazê-lo;
+-Listar Funcionário: Apresenta todos os funcionários e suas informações;
+-Listar Pedidos: Apresenta todos os pedidos realizados pelos clientes;
+
+-Logout: saí do sistema e volta para a página de Login.
+
+3)
+
+Nome do usuário e seu Perfil
+Ao acessar com perfil de Funcionário será mostrado as seguintes opções no index.php:
+-Listar Clientes: A qual é apresentado todos os usuários registrados como tal e suas informações podendo alterá-las ou excluí-las;
+-Listar Pedidos: Apresenta todos os pedidos realizados pelos clientes;
+
+-Logout: saí do sistema e volta para a página de Login.
+
+4)
+Ao acessar com perfil de Cliente será mostrado as seguintes opções no index.php:
+
+Nome do usuário e seu Perfil 
+-Fazer Pedido: Uma página que apresenta um cardápio e logo abaixo um formulário com as opções a serem selecionadas para registrar o pedido;
+-Pesquisar Meu Pedido: Página essa que permite buscar no banco de dados um pedido específico associado ao email a ser devidamente preenchido;
+
+-Logout: saí do sistema e volta para a página de Login.
