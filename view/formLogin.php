@@ -34,7 +34,7 @@
         <input type="submit" value="Cadastre-se" id="cadastro" class="submit2">
     </form>
     
-    <form action="../sobre.html">
+    <form action="sobre.php">
         <input type="submit" value="Sobre o Autor" id="sobre" class="botao">
     </form>
     <br><br>

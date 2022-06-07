@@ -1,0 +1,61 @@
+body{
+    background-image: url("black.png");
+    font-size: 20px;
+    font-family: Verdana;
+    text-align: center;
+}
+
+h1{
+    color: aquamarine;
+    font-size: 30px;
+}
+
+.img{
+    margin-top: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 200px;
+    border-style: dashed;
+    border-color: cornflowerblue;
+}
+
+.submit{
+    border: none;
+    border-radius: 20px;
+    width: 10%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: cornflowerblue;
+    color:azure;
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+.submit:hover{
+    background: greenyellow;
+    color:black;
+    transform: scale(1.2);
+}
+
+.submit2{
+    border: none;
+    border-radius: 20px;
+    width: 8%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: rgb(63, 103, 177);
+    color:azure;
+    font-weight: bolder;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+.submit2:hover{
+    background: rgb(35, 136, 111);
+    color:black;
+    transform: scale(1.1);
+}
